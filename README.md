@@ -7,7 +7,7 @@ I WANT to see the weather outlook for multiple cities\
 SO THAT I can plan a trip accordingly
 
 ## URL Link
-[Click me]
+[Click me](https://garychen513.github.io/WeatherDashboard/)
 
 ## Application
 GIVEN a weather dashboard with form inputs\
