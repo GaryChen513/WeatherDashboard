@@ -1,0 +1,61 @@
+.jumbotron{
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+}
+
+#search-bar-title{
+    font-size: 2rem;
+    margin-top: 1%;
+}
+
+#search-bar{
+    margin: 3% 0 3% 2px;
+}
+
+.currentDayInfo{
+    margin-top:2%;
+}
+
+#topCity{
+    font-size: 2rem;
+    margin-bottom: 1%;
+}
+
+.display-none{
+    display:none;
+}
+
+.list-group{
+    max-height: 50vh;
+    overflow: scroll;
+}
+
+.list-group-item:hover{
+    background-color: lightgray;
+    cursor: pointer;
+}
+
+.futureInfo{
+    margin-top: 2%;
+}
+
+#sub-title{
+    font-size: 1.5rem;
+}
+
+.favorable{
+    background-color: green;
+}
+
+.moderate{
+    background-color: orange;
+}
+
+.severe{
+    background-color: red;
+}
+
+#UVindex{
+    color: white;
+}

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.">
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather Dashboard </title>
+
+</head>
+<body>
+    <div class="jumbotron jumbotron-fluid bg-dark text-white">
+        <h1 >Weather Dashboard</h1>
+    </div>
+
+    <div class="containe-fluid">
+        <div class="row">
+            <div class="form-group col-md-4 bg-light">
+                <p class="font-weight-bold" id="search-bar-title">Search for a city</p>
+                <div id="search-bar">
+                    <input class="input-control py-2" type="search" id="searchCity">
+                    <button class="btn btn-primary" type="button">
+                        <i class="fa fa-search"></i>
+                    </button>
+                </div>
+
+                <ul class="list-group">
+                    <li class="list-group-item display-none">
+                        <span class="cityName"></span>
+                        <button type="button" class="close" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </li>
+                </ul>
+            </div>
+            
+            <div class="col-md-8">
+                <div class="currentDayInfo border">
+                    <div id="topCity">
+                        <span class="font-weight-bold" id="cityName"></span>
+                        <span class="font-weight-bold" id="currentDate"></span>
+                        <span id="icon"><img src="" alt="weather"></span>
+                    </div>
+                    <p>Temperature:  <span id="temperature"></span></p>
+                    <p>Humidity:  <span id="humidity"></span></p>
+                    <p>Wind Speed:  <span id="windspeed"></span></p>
+                    <p>UV index:  <span id="UVindex"></span></p>
+                </div>
+
+                <div class="futureInfo">
+                    <p class="font-weight-bold" id="sub-title">5-Day Forecast:</p>
+                    <div class="weatherCards row">
+                        <div class="card text-white bg-primary mx-2 col" id="day1">
+                            <p class="date"></p>
+                            <p class="weatherIcon"><img src="" alt="futureweather"></p>
+                            <p>Temp:  <span class="temp"></span></p>
+                            <p>Humidity:  <span class="humid"></span></p>
+                        </div>
+
+                        <div class="card text-white bg-primary mx-2 col" id="day2">
+                            <p class="date"></p>
+                            <p class="weatherIcon"><img src="" alt="futureweather"></p>
+                            <p>Temp:  <span class="temp"></span></p>
+                            <p>Humidity:  <span class="humid"></span></p>
+                        </div>
+
+                        <div class="card text-white bg-primary mx-2 col" id="day3">
+                            <p class="date"></p>
+                            <p class="weatherIcon"><img src="" alt="futureweather"></p>
+                            <p>Temp:  <span class="temp"></span></p>
+                            <p>Humidity:  <span class="humid"></span></p>
+                        </div>
+
+                        <div class="card text-white bg-primary mx-2 col" id="day4">
+                            <p class="date"></p>
+                            <p class="weatherIcon"><img src="" alt="futureweather"></p>
+                            <p>Temp:  <span class="temp"></span></p>
+                            <p>Humidity:  <span class="humid"></span></p>
+                        </div>
+
+                        <div class="card text-white bg-primary mx-2 col" id="day5">
+                            <p class="date"></p>
+                            <p class="weatherIcon"><img src="" alt="futureweather"></p>
+                            <p>Temp:  <span class="temp"></span></p>
+                            <p>Humidity:  <span class="humid"></span></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+          </div>
+
+
+          
+        </div>
+    </div>
+
+
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js"></script>
+     <script src="index.js"></script>
+</body>
+</html>
